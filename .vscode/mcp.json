@@ -1,18 +1,11 @@
-{
-	"servers": {
-		"com.microsoft/azure": {
-			"type": "stdio",
-			"command": "dnx",
-			"args": [
-				"Azure.Mcp@2.0.0-beta.6",
-				"--yes",
-				"--",
-				"server",
-				"start"
-			],
-			"gallery": "https://api.mcp.github.com",
-			"version": "2.0.0-beta.6"
-		}
-	},
-	"inputs": []
-}
+import streamlit as st
+
+st.set_page_config(
+    page_title="My App",
+    layout="centered"
+)
+
+st.markdown("## 🚀 App Web Cá Nhân")
+st.write("App này dùng để cài PWA trên iPhone.")
+
+st.success("✅ App đang chạy OK")
